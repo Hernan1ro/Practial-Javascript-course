@@ -7,6 +7,24 @@
     <title>Descuentos</title>
   </head>
   <body>
+    <header>
+      <h1>Calcular precio con descuentos</h1>
+    </header>
+    <section>
+      <form action="">
+        <label for="inputPrecio">Introduzca precio</label>
+        <input id="inputPrecio" type="number" />
+        <label for="inputDescuento">Introduzca descuento</label>
+        <input id="inputDescuento" type="number" />
+        <button type="button" onClick="calcularDescuento()">
+          Calcular descuento
+        </button>
+      </form>
+      <div>
+        <h4>Su descuento es:</h4>
+        <p id="descuento"></p>
+      </div>
+    </section>
     <script src="./descuentos.js"></script>
   </body>
 </html>
