@@ -50,7 +50,7 @@ console.groupEnd();
 // Código del círculo
 console.group("Círculos");
 
-Radio;
+// Radio
 const radioCirculo = 4;
 console.log("El radio del círculo es: " + radioCirculo + "cm");
 
@@ -78,14 +78,14 @@ console.groupEnd();
 
 // Aquí interactuamos con el HTML
 function calcularPerimetroCuadrado() {
-  const input = document.getElementById("InputCuadrado");
+  const input = document.getElementById("inputCuadrado");
   const value = input.value;
 
   const perimetro = perimetroCuadrado(value);
   alert(perimetro);
 }
 function calcularAreaCuadrado() {
-  const input = document.getElementById("InputCuadrado");
+  const input = document.getElementById("inputCuadrado");
   const value = input.value;
 
   const area = areaCuadrado(value);

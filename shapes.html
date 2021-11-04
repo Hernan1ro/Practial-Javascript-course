@@ -7,7 +7,22 @@
     <title>Geometry Shapes</title>
   </head>
   <body>
-    <h1>Geometry Shapes</h1>
+    <header>
+      <h1>Geometry Shapes</h1>
+    </header>
+    <section>
+      <h2>Calcular el perimetro y área de un cuadrado</h2>
+      <form action="">
+        <label for="inputCuadrado">Lado cuadrado</label>
+        <input id="inputCuadrado" type="number" placeholder="lado cuadrado" />
+        <button type="button" onClick="calcularPerimetroCuadrado()">
+          calcular perimetro
+        </button>
+        <button type="button" onClick="calcularAreaCuadrado()">
+          Calcular Area
+        </button>
+      </form>
+    </section>
     <script src="./shapes.js"></script>
   </body>
 </html>
