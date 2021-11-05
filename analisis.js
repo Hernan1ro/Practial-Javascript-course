@@ -1,5 +1,10 @@
 const salariosColombia = colombia.map((persona) => persona.salary);
-console.log(salariosColombia);
+const salariosSorted = salariosColombia.sort((a, b) => a - b);
+
+const spliceStart = salariosSorted.length * 0.9;
+const spliceEnd = salariosSorted.length - spliceStart;
+
+const salariosTop10 = salariosSorted.splice(spliceStart, spliceEnd);
 
 function calcularMediana(lista = [100, 200, 300, 400, 500, 600, 700, 800]) {
   function average(lista = [1, 2, 3, 4]) {
@@ -30,4 +35,5 @@ function calcularMedianaSalarios(salarios) {
   calcularMediana(salarios);
 }
 
-calcularMedianaSalarios(salariosColombia);
+calcularMedianaSalarios(salariosSorted);
+calcularMedianaSalarios(salariosTop10);
